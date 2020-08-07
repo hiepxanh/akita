@@ -11,7 +11,7 @@ import { persistState } from '@datorama/akita';
 
 const persistState = persistState();
 
-const providers = [{ provide: 'persistStorage', useValue: storage }];
+const providers = [{ provide: 'persistStorage', useValue: persistState }];
 
 platformBrowserDynamic(providers)
   .bootstrapModule(AppModule)
